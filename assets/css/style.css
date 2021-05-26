@@ -1,1 +1,69 @@
-/*Styling sheet for bio*/
+/*---------------------------
+GLOBAL/GENERIC STYLING STARTS
+-----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Set background color and Font-Family*/
+body {
+  background-color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*---------------------------
+GLOBAL/GENERIC STYLING ENDS
+-----------------------------*/
+header {
+  padding: 10px 5px 10px 40px;
+  background-color: rgb(40, 45, 45);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  top: 0;
+}
+
+header h1 {
+  background-color: rgb(22, 192, 192);
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(22, 192, 192);
+}
+
+header nav {
+  margin: 7px 50px;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-size: 1.55vw;
+}
+
+/*Hero Styling Starts*/
+.hero {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  margin-top: 0;
+  background-image: url(../images/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.hero h2 {
+  background-color: rgb(22, 192, 192);
+}
