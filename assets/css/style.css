@@ -139,7 +139,7 @@ WORK SECTION STYLING
 .work h2 {
   text-align: right;
   margin-right: 5px;
-  margin-left: 109px;
+  margin-left: 116px;
 }
 
 /*card position from work title*/
@@ -157,7 +157,7 @@ WORK SECTION STYLING
   margin-bottom: 15px;
   background-image: url(/assets/images/surfreport.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -201,7 +201,6 @@ WORK SECTION STYLING
   font-size: 22px;
   margin-bottom: 15px;
   background-size: cover;
-  background-position: center;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -239,7 +238,8 @@ WORK SECTION STYLING
 
 /*LED-Wall card specific styling*/
 .LED-wall {
-  background-image: url(/assets/images/surfreport.jpg);
+  background-image: url(/assets/images/led-wall.png);
+  background-position: bottom;
 }
 
 .LED-wall span,
@@ -249,7 +249,8 @@ WORK SECTION STYLING
 
 /*Calculator specific styling*/
 .calculator {
-  background-image: url(/assets/images/surfreport.jpg);
+  background-image: url(/assets/images/calculator.png);
+  background-position: bottom;
 }
 
 .calculator span,
@@ -258,7 +259,8 @@ WORK SECTION STYLING
 }
 /*Pastel Puzzel specific styling*/
 .pastel-puzzels {
-  background-image: url(/assets/images/surfreport.jpg);
+  background-image: url(/assets/images/pastel.png);
+  background-position: center;
 }
 
 .pastel-puzzels span,
@@ -267,7 +269,8 @@ WORK SECTION STYLING
 }
 /*Run-Buddy Specific Styling*/
 .run-buddy {
-  background-image: url(/assets/images/surfreport.jpg);
+  background-image: url(/assets/images/run-buddy.png);
+  background-position: top;
 }
 
 .run-buddy span,
@@ -287,7 +290,7 @@ CONTACT ME SECTION STYLING
 .contact-me h2 {
   text-align: right;
   margin-right: 5px;
-  margin-left: 33px;
+  margin-left: 38px;
 }
 .contact-me ul {
   display: flex;
