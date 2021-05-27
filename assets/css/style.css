@@ -53,10 +53,13 @@ header ul {
 }
 
 header a {
-  padding: 10px 15px;
+  width: 100%;
+  margin: 2px 20px 2px 20px;
+  padding-bottom: 2px;
   font-size: 1.65vw;
   text-decoration: none;
   color: rgb(114, 219, 219);
+  border-bottom: 3px solid rgb(114, 219, 219);
 }
 /*-----------------
 HEADER STYLING ENDS
@@ -80,25 +83,29 @@ HERO STYLING BEGINS
 /*Hero subtitle styling*/
 .hero h2 {
   background-color: rgb(114, 219, 219);
+  justify-content: end;
   font-size: 30px;
   height: 35px;
-  margin-left: 550px;
+  margin-left: 1060px;
   margin-top: 95px;
 }
 /*-----------------
 HERO STYLING ENDS
 -----------------*/
-
-/*-----------------
-HERO STYLING ENDS
------------------*/
-
+/*-------------------------
+MAIN SECTION STYLING STARTS
+-------------------------*/
 .content {
   color: rgb(55, 54, 105);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: 45px;
 }
+
+/*---------------------
+ABOUT ME SECTION STARTS
+---------------------*/
 
 .about-me {
   display: flex;
@@ -115,9 +122,15 @@ HERO STYLING ENDS
   margin-left: 10px;
   border-left: 3px solid rgb(55, 54, 105);
   padding-left: 20px;
+  margin-right: 50px;
 }
-
-/*Start of work section*/
+/*-------------------
+ABOUT ME SECTION ENDS
+-------------------*/
+/*-----------------
+WORK SECTION STYLING
+------------------*/
+/*Work section title*/
 .work {
   display: flex;
   margin-bottom: 20px;
@@ -129,11 +142,144 @@ HERO STYLING ENDS
   margin-left: 109px;
 }
 
+/*card position from work title*/
 .cards {
   margin-left: 10px;
   border-left: 3px solid rgb(55, 54, 105);
   padding-left: 20px;
 }
+
+/*large card global styling*/
+.large-card {
+  width: 1133px;
+  border: 4px solid rgb(114, 219, 219);
+  font-size: 22px;
+  margin-bottom: 15px;
+  background-image: url(/assets/images/surfreport.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*large card text styling*/
+.large-card span,
+.large-card h3 {
+  background-color: rgb(114, 219, 219);
+  color: rgb(55, 54, 105);
+  text-align: center;
+  width: 160px;
+}
+
+.large-card span {
+  margin-top: 415px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.large-card h3 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/*small card global positioning*/
+.small-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*small card global text styling*/
+.LED-wall,
+.calculator,
+.pastel-puzzels,
+.run-buddy {
+  width: 49%;
+  border: 4px solid rgb(114, 219, 219);
+  font-size: 22px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.LED-wall span,
+.calculator span,
+.pastel-puzzels span,
+.run-buddy span {
+  margin-top: 115px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.LED-wall h3,
+.calculator h3,
+.pastel-puzzels h3,
+.run-buddy h3 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.LED-wall span,
+.LED-wall h3,
+.calculator span,
+.calculator h3,
+.pastel-puzzels span,
+.pastel-puzzels h3,
+.run-buddy span,
+.run-buddy h3 {
+  background-color: rgb(114, 219, 219);
+  color: rgb(55, 54, 105);
+  justify-content: left;
+}
+
+/*LED-Wall card specific styling*/
+.LED-wall {
+  background-image: url(/assets/images/surfreport.jpg);
+}
+
+.LED-wall span,
+.LED-wall h3 {
+  width: 115px;
+}
+
+/*Calculator specific styling*/
+.calculator {
+  background-image: url(/assets/images/surfreport.jpg);
+}
+
+.calculator span,
+.calculator h3 {
+  width: 165px;
+}
+/*Pastel Puzzel specific styling*/
+.pastel-puzzels {
+  background-image: url(/assets/images/surfreport.jpg);
+}
+
+.pastel-puzzels span,
+.pastel-puzzels h3 {
+  width: 180px;
+}
+/*Run-Buddy Specific Styling*/
+.run-buddy {
+  background-image: url(/assets/images/surfreport.jpg);
+}
+
+.run-buddy span,
+.run-buddy h3 {
+  width: 140px;
+}
+/*---------------
+WORK SECTION ENDS
+---------------*/
+/*------------------------
+CONTACT ME SECTION STYLING
+------------------------*/
 .contact-me {
   display: flex;
 }
@@ -141,7 +287,7 @@ HERO STYLING ENDS
 .contact-me h2 {
   text-align: right;
   margin-right: 5px;
-  margin-left: 76px;
+  margin-left: 33px;
 }
 .contact-me ul {
   display: flex;
@@ -153,3 +299,19 @@ HERO STYLING ENDS
   border-left: 3px solid rgb(55, 54, 105);
   padding-left: 20px;
 }
+.contact-me li {
+  margin-top: 35px;
+}
+.contact-me a {
+  color: rgb(55, 54, 105);
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 3px solid rgb(55, 54, 105);
+}
+/*---------------------
+CONTACT ME SECTION ENDS
+---------------------*/
+/*-----------------------
+MAIN SECTION STYLING ENDS
+-----------------------*/
