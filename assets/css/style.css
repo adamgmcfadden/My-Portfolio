@@ -86,7 +86,7 @@ HERO STYLING BEGINS
   justify-content: end;
   font-size: 30px;
   height: 35px;
-  margin-left: 1060px;
+  margin-left: 1055px;
   margin-top: 95px;
 }
 /*-----------------
@@ -96,6 +96,12 @@ HERO STYLING ENDS
 MAIN SECTION STYLING STARTS
 -------------------------*/
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-text {
   color: rgb(55, 54, 105);
   display: flex;
   flex-direction: column;
@@ -122,7 +128,7 @@ ABOUT ME SECTION STARTS
   margin-left: 10px;
   border-left: 3px solid rgb(55, 54, 105);
   padding-left: 20px;
-  margin-right: 50px;
+  margin-right: 60px;
 }
 /*-------------------
 ABOUT ME SECTION ENDS
@@ -151,11 +157,11 @@ WORK SECTION STYLING
 
 /*large card global styling*/
 .large-card {
-  width: 1133px;
+  width: 1050px;
   border: 4px solid rgb(114, 219, 219);
   font-size: 22px;
   margin-bottom: 15px;
-  background-image: url(/assets/images/surfreport.jpg);
+  background-image: url(../images/surfreport.jpg);
   background-size: cover;
   background-position: bottom;
   height: 500px;
@@ -238,7 +244,7 @@ WORK SECTION STYLING
 
 /*LED-Wall card specific styling*/
 .LED-wall {
-  background-image: url(/assets/images/led-wall.png);
+  background-image: url(../images/led-wall.png);
   background-position: bottom;
 }
 
@@ -249,7 +255,7 @@ WORK SECTION STYLING
 
 /*Calculator specific styling*/
 .calculator {
-  background-image: url(/assets/images/calculator.png);
+  background-image: url(../images/calculator.png);
   background-position: bottom;
 }
 
@@ -259,7 +265,7 @@ WORK SECTION STYLING
 }
 /*Pastel Puzzel specific styling*/
 .pastel-puzzels {
-  background-image: url(/assets/images/pastel.png);
+  background-image: url(../images/pastel.png);
   background-position: center;
 }
 
@@ -269,7 +275,7 @@ WORK SECTION STYLING
 }
 /*Run-Buddy Specific Styling*/
 .run-buddy {
-  background-image: url(/assets/images/run-buddy.png);
+  background-image: url(../images/run-buddy.png);
   background-position: top;
 }
 
@@ -290,14 +296,15 @@ CONTACT ME SECTION STYLING
 .contact-me h2 {
   text-align: right;
   margin-right: 5px;
-  margin-left: 38px;
+  margin-left: 41px;
 }
+
 .contact-me ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
   list-style-type: none;
-  margin-right: 50px;
+  margin-right: 70px;
   margin-left: 10px;
   border-left: 3px solid rgb(55, 54, 105);
   padding-left: 20px;
@@ -308,6 +315,7 @@ CONTACT ME SECTION STYLING
 .contact-me a {
   color: rgb(55, 54, 105);
   font-weight: bold;
+  font-size: 22px;
   text-decoration: none;
   padding-bottom: 2px;
   border-bottom: 3px solid rgb(55, 54, 105);
