@@ -4,7 +4,6 @@ GLOBAL/GENERIC STYLING STARTS
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /*Set background color and Font-Family*/
@@ -61,6 +60,11 @@ header a {
   color: rgb(114, 219, 219);
   border-bottom: 3px solid rgb(114, 219, 219);
 }
+/*nav button hover styling*/
+header a:hover {
+  background-color: rgb(114, 219, 219);
+}
+
 /*-----------------
 HEADER STYLING ENDS
 -----------------*/
@@ -104,8 +108,7 @@ MAIN SECTION STYLING STARTS
 .content-text {
   color: rgb(55, 54, 105);
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  text-align: right;
   font-size: 45px;
 }
 
@@ -143,7 +146,6 @@ WORK SECTION STYLING
 }
 
 .work h2 {
-  text-align: right;
   margin-right: 5px;
   margin-left: 116px;
 }
@@ -155,18 +157,42 @@ WORK SECTION STYLING
   padding-left: 20px;
 }
 
+/*image fade*/
+.cards img:hover {
+  opacity: 0.5;
+}
+/*--------------------------
+START OF LARGE CARD STYLING
+--------------------------*/
 /*large card global styling*/
 .large-card {
   width: 1050px;
-  border: 4px solid rgb(114, 219, 219);
+  height: 565px;
   font-size: 22px;
-  margin-bottom: 15px;
-  background-image: url(../images/surfreport.jpg);
-  background-size: cover;
-  background-position: bottom;
-  height: 500px;
+  margin-bottom: 30px;
   display: flex;
-  flex-direction: column;
+  z-index: 9999;
+}
+
+/*large card image anchor styling*/
+.large-card a {
+  display: flex;
+}
+
+/*removal of anchor decoration*/
+.large-card a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*large card image styling*/
+.large-card img {
+  border: 4px solid rgb(114, 219, 219);
+  width: 1050px;
+  display: flex;
 }
 
 /*large card text styling*/
@@ -174,12 +200,14 @@ WORK SECTION STYLING
 .large-card h3 {
   background-color: rgb(114, 219, 219);
   color: rgb(55, 54, 105);
-  text-align: center;
-  width: 160px;
+  text-align: left;
+  width: 155px;
+  padding-left: 20px;
+  position: absolute;
 }
 
 .large-card span {
-  margin-top: 415px;
+  margin-top: 498px;
   font-size: 25px;
   font-weight: bold;
 }
@@ -187,116 +215,120 @@ WORK SECTION STYLING
 .large-card h3 {
   font-size: 15px;
   font-weight: normal;
+  margin-top: 526px;
 }
 
-/*small card global positioning*/
+/*-----------------------
+END OF LARGE CARD STYLING
+-----------------------*/
+
+/*-------------------------
+START OF SMALL CARD STYLING
+-------------------------*/
+/*small card global styling*/
 .small-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
+  z-index: 9999;
 }
 
-/*small card global text styling*/
-.LED-wall,
-.calculator,
-.pastel-puzzels,
-.run-buddy {
-  width: 49%;
+/*removal of anchor decoration*/
+.small-cards a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*small card image styling*/
+.LED-wall img,
+.calculator img,
+.pastel-puzzels img,
+.run-buddy img {
   border: 4px solid rgb(114, 219, 219);
-  font-size: 22px;
-  margin-bottom: 15px;
-  background-size: cover;
+  width: 507px;
   height: 200px;
+  justify-content: space-evenly;
   display: flex;
-  flex-direction: column;
 }
 
-.LED-wall span,
-.calculator span,
-.pastel-puzzels span,
-.run-buddy span {
-  margin-top: 115px;
-  font-size: 25px;
-  font-weight: bold;
+.LED-wall img,
+.pastel-puzzels img {
+  margin-right: 15px;
+  margin-bottom: 30px;
 }
 
-.LED-wall h3,
-.calculator h3,
-.pastel-puzzels h3,
-.run-buddy h3 {
-  font-size: 15px;
-  font-weight: normal;
+.calculator img,
+.run-buddy img {
+  margin-left: 15px;
 }
 
-.LED-wall span,
-.LED-wall h3,
-.calculator span,
-.calculator h3,
-.pastel-puzzels span,
-.pastel-puzzels h3,
-.run-buddy span,
-.run-buddy h3 {
+/*small card text styling*/
+.small-cards h3,
+.small-cards span {
   background-color: rgb(114, 219, 219);
   color: rgb(55, 54, 105);
-  justify-content: left;
+  text-align: left;
+  position: absolute;
 }
 
-/*LED-Wall card specific styling*/
-.LED-wall {
-  background-image: url(../images/led-wall.png);
-  background-position: bottom;
+.small-cards span {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 140px;
 }
 
-.LED-wall span,
-.LED-wall h3 {
-  width: 115px;
+.small-cards h3 {
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 168px;
 }
 
-/*Calculator specific styling*/
-.calculator {
-  background-image: url(../images/calculator.png);
-  background-position: bottom;
+.LED-wall h3,
+.LED-wall span {
+  width: 120px;
+  padding-left: 20px;
 }
 
-.calculator span,
-.calculator h3 {
+.calculator h3,
+.calculator span {
   width: 165px;
-}
-/*Pastel Puzzel specific styling*/
-.pastel-puzzels {
-  background-image: url(../images/pastel.png);
-  background-position: center;
+  margin-left: 18px;
+  padding-left: 20px;
 }
 
-.pastel-puzzels span,
-.pastel-puzzels h3 {
-  width: 180px;
-}
-/*Run-Buddy Specific Styling*/
-.run-buddy {
-  background-image: url(../images/run-buddy.png);
-  background-position: top;
+.pastel-puzzels h3,
+.pastel-puzzels span {
+  width: 185px;
+  padding-left: 20px;
 }
 
-.run-buddy span,
-.run-buddy h3 {
-  width: 140px;
+.run-buddy h3,
+.run-buddy span {
+  width: 145px;
+  margin-left: 18px;
+  padding-left: 20px;
 }
+
+/*-------------------------
+END OF SMALL CARD STYLING
+-------------------------*/
 /*---------------
 WORK SECTION ENDS
 ---------------*/
+
 /*------------------------
 CONTACT ME SECTION STYLING
 ------------------------*/
 .contact-me {
   display: flex;
+  text-align: right;
 }
 
 .contact-me h2 {
-  text-align: right;
   margin-right: 5px;
-  margin-left: 41px;
+  margin-left: 45px;
 }
 
 .contact-me ul {
@@ -319,6 +351,11 @@ CONTACT ME SECTION STYLING
   text-decoration: none;
   padding-bottom: 2px;
   border-bottom: 3px solid rgb(55, 54, 105);
+}
+
+.contact-me a:hover {
+  background-color: rgb(55, 54, 105);
+  color: white;
 }
 /*---------------------
 CONTACT ME SECTION ENDS
