@@ -35,6 +35,7 @@ header h1 {
   display: flex;
   justify-content: flex-end;
   width: 300px;
+  margin-top: 10px;
 }
 
 /*Header nav button styling*/
@@ -60,6 +61,7 @@ header a {
   color: rgb(114, 219, 219);
   border-bottom: 3px solid rgb(114, 219, 219);
 }
+
 /*nav button hover styling*/
 header a:hover {
   background-color: rgb(114, 219, 219);
@@ -90,8 +92,8 @@ HERO STYLING BEGINS
   justify-content: end;
   font-size: 30px;
   height: 35px;
-  margin-left: 1055px;
-  margin-top: 95px;
+  margin-left: 1190px;
+  margin-top: 100px;
 }
 /*-----------------
 HERO STYLING ENDS
@@ -166,7 +168,6 @@ START OF LARGE CARD STYLING
 --------------------------*/
 /*large card global styling*/
 .large-card {
-  width: 1050px;
   height: 565px;
   font-size: 22px;
   margin-bottom: 30px;
@@ -191,7 +192,7 @@ a:active {
 /*large card image styling*/
 .large-card img {
   border: 4px solid rgb(114, 219, 219);
-  width: 1050px;
+  width: 1190px;
   display: flex;
 }
 
@@ -242,12 +243,9 @@ a:active {
 }
 
 /*small card image styling*/
-.LED-wall img,
-.calculator img,
-.pastel-puzzels img,
-.run-buddy img {
+.small-cards img {
   border: 4px solid rgb(114, 219, 219);
-  width: 507px;
+  width: 576px;
   height: 200px;
   justify-content: space-evenly;
   display: flex;
@@ -363,3 +361,212 @@ CONTACT ME SECTION ENDS
 /*-----------------------
 MAIN SECTION STYLING ENDS
 -----------------------*/
+
+/*-------------------
+MEDIA QUERIES SECTION
+-------------------*/
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  /*nav button relocation*/
+  header {
+    width: 100%;
+  }
+
+  header nav {
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .hero {
+    height: 120px;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+    margin-left: 720px;
+    margin-top: 75px;
+  }
+
+  .content-text {
+    font-size: 36px;
+  }
+
+  .about-me p {
+    margin-right: 35px;
+  }
+
+  .cards {
+    margin-left: 7px;
+  }
+
+  /*large card placement and re-sizing*/
+  .large-card img {
+    width: 685px;
+    height: 400px;
+  }
+  /*large card placement and re-sizing*/
+  .large-card {
+    height: max-content;
+  }
+
+  .large-card span {
+    margin-top: 330px;
+  }
+
+  .large-card h3 {
+    margin-top: 358px;
+  }
+  /*small card placement and re-sizing*/
+  .small-cards img {
+    width: 685px;
+    margin-left: 0;
+    justify-content: space-between;
+  }
+
+  .calculator img {
+    margin-bottom: 30px;
+  }
+
+  .calculator span,
+  .calculator h3,
+  .run-buddy span,
+  .run-buddy h3 {
+    margin-left: 2px;
+  }
+  /*contact me section placement*/
+  .contact-me h2 {
+    margin-left: 69px;
+  }
+
+  .contact-me ul {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact-me li {
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+  }
+}
+
+/*MEDIA QUERIES FOR TABLETS AND SMALLER*/
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 40px;
+  }
+
+  header h1 {
+    height: 35px;
+    font-size: 30px;
+  }
+
+  header nav {
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+
+  .hero h2 {
+    margin-left: 520px;
+  }
+
+  .content {
+    margin-left: -40px;
+  }
+
+  .content-text {
+    font-size: 30px;
+  }
+
+  .large-card img {
+    width: 540px;
+    height: 300px;
+  }
+
+  .large-card h3 {
+    margin-top: 270px;
+  }
+
+  .large-card span {
+    margin-top: 242px;
+  }
+
+  /*small card re-styling and sizing*/
+
+  .small-cards img {
+    width: 540px;
+    height: 150px;
+  }
+
+  .small-cards span {
+    margin-top: 95px;
+  }
+
+  .small-cards h3 {
+    margin-top: 124px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header {
+    width: 100%;
+  }
+
+  header h1 {
+    height: 27px;
+    font-size: 25px;
+    width: 225px;
+  }
+
+  header a {
+    font-size: 11px;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .hero {
+    height: 90px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+    margin-left: 345px;
+    margin-top: 58px;
+    height: 24px;
+  }
+
+  .content {
+    margin-left: -45px;
+  }
+
+  .content-text {
+    font-size: 25px;
+  }
+
+  .large-card img {
+    width: 355px;
+    height: 200px;
+  }
+
+  .large-card h3 {
+    margin-top: 170px;
+  }
+
+  .large-card span {
+    margin-top: 142px;
+  }
+
+  .small-cards img {
+    width: 355px;
+    height: 150px;
+  }
+
+  .small-cards h3 {
+    margin-top: 122px;
+  }
+
+  .small-cards span {
+    margin-top: 95px;
+  }
+}
