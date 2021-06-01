@@ -32,9 +32,10 @@ header {
 /*Header title styling*/
 header h1 {
   background-color: rgb(114, 219, 219);
+  color: rgb(55, 54, 105);
   display: flex;
   justify-content: flex-end;
-  width: 300px;
+  width: 400px;
   margin-top: 10px;
 }
 
@@ -92,8 +93,21 @@ HERO STYLING BEGINS
   justify-content: end;
   font-size: 30px;
   height: 35px;
-  margin-left: 1190px;
+  margin-left: 1080px;
   margin-top: 100px;
+  color: rgb(55, 54, 105);
+}
+
+/*Hero subtitle -master- (because I'm working towards it)*/
+
+.hero a {
+  color: rgba(55, 54, 105, 0.3);
+  text-decoration: none;
+}
+
+.hero a:hover {
+  background-color: rgb(55, 54, 105);
+  color: white;
 }
 /*-----------------
 HERO STYLING ENDS
@@ -117,24 +131,43 @@ MAIN SECTION STYLING STARTS
 /*---------------------
 ABOUT ME SECTION STARTS
 ---------------------*/
-
 .about-me {
   display: flex;
   margin-bottom: 20px;
 }
-
+/*about me subtitle styling*/
 .about-me h2 {
   text-align: right;
-  margin-right: 5px;
-  margin-left: 100px;
+  width: 130px;
+  padding-right: 15px;
+  margin-left: 95px;
 }
+
+/*about me paragraph styling*/
 .about-me p {
   text-align: left;
-  margin-left: 10px;
+  margin-left: -2px;
+  width: 955px;
   border-left: 3px solid rgb(55, 54, 105);
-  padding-left: 20px;
-  margin-right: 60px;
+  padding-left: 255px;
+  position: relative;
+  margin-bottom: 500px;
 }
+
+.img {
+  width: 250px;
+  height: 305px;
+}
+/*about me profile picture styling*/
+.about-me img {
+  height: 290px;
+  position: absolute;
+
+  margin-left: 20px;
+  border: 4px solid rgb(114, 219, 219);
+  margin-bottom: 100px;
+}
+
 /*-------------------
 ABOUT ME SECTION ENDS
 -------------------*/
@@ -335,7 +368,7 @@ CONTACT ME SECTION STYLING
   width: 100%;
   list-style-type: none;
   margin-right: 70px;
-  margin-left: 10px;
+  margin-left: 5px;
   border-left: 3px solid rgb(55, 54, 105);
   padding-left: 20px;
 }
@@ -383,7 +416,7 @@ MEDIA QUERIES SECTION
 
   .hero h2 {
     font-size: 25px;
-    margin-left: 720px;
+    margin-left: 630px;
     margin-top: 75px;
   }
 
@@ -391,17 +424,24 @@ MEDIA QUERIES SECTION
     font-size: 36px;
   }
 
-  .about-me p {
-    margin-right: 35px;
+  /*about-me section placement and re-sizing*/
+
+  .about-me h2 {
+    margin-left: 20px;
   }
 
-  .cards {
-    margin-left: 7px;
+  .about-me p {
+    width: 515px;
+  }
+
+  /*work section placement and re-sizing*/
+  .work h2 {
+    margin-left: 61px;
   }
 
   /*large card placement and re-sizing*/
   .large-card img {
-    width: 685px;
+    width: 735px;
     height: 400px;
   }
   /*large card placement and re-sizing*/
@@ -418,7 +458,7 @@ MEDIA QUERIES SECTION
   }
   /*small card placement and re-sizing*/
   .small-cards img {
-    width: 685px;
+    width: 735px;
     margin-left: 0;
     justify-content: space-between;
   }
@@ -435,7 +475,7 @@ MEDIA QUERIES SECTION
   }
   /*contact me section placement*/
   .contact-me h2 {
-    margin-left: 69px;
+    margin-left: 9px;
   }
 
   .contact-me ul {
@@ -445,13 +485,14 @@ MEDIA QUERIES SECTION
   }
 
   .contact-me li {
-    padding: 0 10px 0 10px;
+    padding: 0 30px 0 30px;
     margin-top: 10px;
   }
 }
 
 /*MEDIA QUERIES FOR TABLETS AND SMALLER*/
 @media screen and (max-width: 768px) {
+  /*header section re-positioned re-styled*/
   header {
     width: 100%;
     height: 40px;
@@ -459,7 +500,9 @@ MEDIA QUERIES SECTION
 
   header h1 {
     height: 35px;
-    font-size: 30px;
+    font-size: 25px;
+    width: 330px;
+    padding-top: 2px;
   }
 
   header nav {
@@ -467,20 +510,41 @@ MEDIA QUERIES SECTION
     margin-top: 15px;
   }
 
+  /*subtitle re-styled and positioned*/
+
   .hero h2 {
-    margin-left: 520px;
+    margin-left: 462px;
+    font-size: 22px;
   }
 
-  .content {
-    margin-left: -40px;
-  }
-
+  /*main section restyled and positioned*/
   .content-text {
-    font-size: 30px;
+    font-size: 22px;
   }
 
+  /*about me section re-styled and positioned*/
+  .about-me h2 {
+    width: 70px;
+    margin-left: 26px;
+  }
+
+  .about-me p {
+    width: 372px;
+  }
+
+  /*work section restyled and positioned*/
+
+  .work {
+    margin-top: 115px;
+  }
+
+  .work h2 {
+    margin-left: 42px;
+  }
+
+  /*large card restyled and positioned*/
   .large-card img {
-    width: 540px;
+    width: 585px;
     height: 300px;
   }
 
@@ -493,9 +557,8 @@ MEDIA QUERIES SECTION
   }
 
   /*small card re-styling and sizing*/
-
   .small-cards img {
-    width: 540px;
+    width: 585px;
     height: 150px;
   }
 
@@ -506,59 +569,101 @@ MEDIA QUERIES SECTION
   .small-cards h3 {
     margin-top: 124px;
   }
-}
+  /*contact me section resyling and sizing*/
+  .contact-me h2 {
+    margin-right: 11px;
+  }
 
+  .contact-me li {
+    padding: 0 15px 0 20px;
+  }
+  .contact-me a {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 575px) {
+  /*header restyling and positioning*/
   header {
     width: 100%;
+    height: 80px;
   }
 
   header h1 {
     height: 27px;
     font-size: 25px;
-    width: 225px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /*nav button restyling and positioning*/
+  header nav {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   header a {
-    font-size: 11px;
-    margin-left: 0;
-    margin-bottom: 5px;
+    font-size: 15px;
   }
-
+  /*hero subtitle restyling and positioning*/
   .hero {
     height: 90px;
   }
 
   .hero h2 {
     font-size: 22px;
-    margin-left: 345px;
+    margin-left: 285px;
     margin-top: 58px;
-    height: 24px;
+    height: 25px;
   }
-
+  /*main content restyling and positioning*/
   .content {
-    margin-left: -45px;
+    margin-left: ;
   }
 
   .content-text {
     font-size: 25px;
   }
+  /*about-me restyling and positioning*/
+  .about-me img {
+    width: 40%;
+    height: auto;
+    margin-left: 110px;
+  }
 
+  .about-me p {
+    display: flex;
+    text-align: center;
+    padding-top: 355px;
+    padding-left: 25px;
+    width: 400px;
+    position: relative;
+  }
+  /*work section restyling and positioning*/
+  .work {
+    margin-top: 450px;
+  }
+
+  .work h2 {
+    margin-left: 35px;
+  }
+  /*large card restyling and positioning*/
   .large-card img {
-    width: 355px;
-    height: 200px;
+    width: 400px;
+    height: 240px;
   }
 
   .large-card h3 {
-    margin-top: 170px;
+    margin-top: 210px;
   }
 
   .large-card span {
-    margin-top: 142px;
+    margin-top: 181px;
   }
-
+  /*small cards restyling and postioning*/
   .small-cards img {
-    width: 355px;
+    width: 400px;
     height: 150px;
   }
 
@@ -569,4 +674,12 @@ MEDIA QUERIES SECTION
   .small-cards span {
     margin-top: 95px;
   }
+}
+/*contact me section resyling and sizing*/
+.contact-me a {
+  font-size: 20px;
+}
+
+.contact-me h2 {
+  margin-right: 8px;
 }
