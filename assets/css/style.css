@@ -322,19 +322,25 @@ MEDIA QUERIES SECTION STARTS
 --------------------------*/
 /*media query small desktop screens and laptops*/
 @media screen and (max-width: 980px) {
-  /*header re-size*/
+  header {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /*header title repositioning and sizing*/
   header h1 {
-    font-size: 28px;
-    flex: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
   }
 
-  /*nav links re-size*/
-  header nav {
-    flex: 1.6;
+  /*nav buttons resizing and positioning*/
+  header ul {
+    width: 100%;
   }
 
-  header a {
-    font-size: 20px;
+  header li {
+    padding: 0 25px;
   }
 
   /*content section title resizing*/
@@ -348,7 +354,7 @@ MEDIA QUERIES SECTION STARTS
     margin-left: 48px;
   }
 
-   /*work title re-positioning*/
+  /*work title re-positioning*/
   .work {
     margin-left: 62px;
   }
@@ -391,33 +397,18 @@ MEDIA QUERIES SECTION STARTS
 
 /*media query for tablet sized screen and smaller*/
 @media screen and (max-width: 768px) {
-  /*header re-orginizing*/
-  header {
-    flex-direction: column;
-  }
-
-  /*header title repositioning and sizing*/
-  header h1 {
-    width: 100%;
-    text-align: center;
-    font-size: 35px;
-  }
-
-  /*nav buttons resizing and positioning*/
-  header ul {
+  /*hero section - jumbo image sizing*/
+  .hero {
     width: 100%;
   }
 
-  header li {
-    padding: 0 25px;
-  }
-
-  /*cool subtitle resizing*/
+  /*hero section - cool subtitle resizing*/
   .hero h2 {
     font-size: 25px;
   }
 
-  .about-me h2{
+  /*about me section styling - resizing*/
+  .about-me h2 {
     margin-left: 30px;
   }
 
@@ -442,7 +433,6 @@ MEDIA QUERIES SECTION STARTS
     margin-top: 150px;
     font-size: 22px;
     font-weight: bold;
-    
   }
 
   /*ALL cards text styling - small FONT TEXT*/
@@ -482,39 +472,43 @@ MEDIA QUERIES SECTION STARTS
     flex-wrap: wrap;
   }
 
-
   .contact-me li {
     width: 48%;
     text-align: center;
     margin-top: 5px;
-    
   }
+}
 
-   
 /*media query for mobile phone sized screen and smaller*/
 @media screen and (max-width: 575px) {
+  /*header nav button re-positioning*/
   header ul {
     justify-content: center;
   }
 
   header li {
-    padding: 0 5px;
+    padding: 5px 5px;
   }
 
+  header a {
+    font-size: 18px;
+  }
+
+  /*all maing content title resizing*/
   .content-text {
     font-size: 28px;
   }
 
-
+  /*about me section resizing and positioning*/
   .about-me {
     margin-left: 3px;
   }
 
   .about-me h2 {
-    
     padding-right: 15px;
   }
 
+  /*work section re-positioning*/
 
   .work {
     margin-left: 55px;
@@ -523,14 +517,15 @@ MEDIA QUERIES SECTION STARTS
     padding-right: 15px;
   }
 
-   /*ALL cards text styling - LARGE FONT TEXT*/
+  /*ALL cards text styling - LARGE FONT TEXT*/
   .cards h3 {
     margin-left: 15px;
     margin-top: 130px;
     font-size: 22px;
     font-weight: bold;
-    
   }
+
+  /*all cards repositioning*/
 
   .cards img {
     margin-left: 15px;
@@ -542,7 +537,7 @@ MEDIA QUERIES SECTION STARTS
     font-weight: normal;
   }
 
-  /*large card resizing and positioning*/
+  /*large card  and text resizing and positioning*/
   .large-card img {
     width: 92%;
     height: 400px;
@@ -568,9 +563,13 @@ MEDIA QUERIES SECTION STARTS
     height: 160px;
   }
 
+  /*contact me section repositioning*/
   .contact-me h2 {
     padding-right: 15px;
   }
 
-  
+  .contact-me li {
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }
