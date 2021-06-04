@@ -2,8 +2,8 @@
 GLOBAL/GENERIC STYLING STARTS
 -----------------------------*/
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 /*Set background color and Font-Family*/
@@ -22,52 +22,47 @@ HEADER STYLING BEGINS
 /*Header global styling*/
 header {
   padding: 10px 5px 10px 0;
+  margin: 0 auto;
   background-color: rgb(40, 45, 45);
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  top: 0;
 }
 
 /*Header title styling*/
 header h1 {
   background-color: rgb(114, 219, 219);
   color: rgb(55, 54, 105);
-  display: flex;
-  justify-content: flex-end;
-  width: 400px;
-  margin-top: 10px;
+  text-align: end;
+  flex: 0.3;
 }
 
 /*Header nav button styling*/
 header nav {
-  margin: 7px 50px;
+  margin: 7px auto;
+  flex: 1;
 }
 
 header ul {
+  margin-right: 3.5%;
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
   list-style: none;
+  flex: 1;
 }
 
 header a {
-  width: 100%;
-  margin: 2px 20px 2px 20px;
   padding-bottom: 2px;
-  font-size: 1.65vw;
-  text-decoration: none;
-  color: rgb(114, 219, 219);
   border-bottom: 3px solid rgb(114, 219, 219);
+  margin: auto 25px auto 25px;
+  color: rgb(114, 219, 219);
+  font-size: 23px;
+  text-decoration: none;
 }
 
 /*nav button hover styling*/
 header a:hover {
   background-color: rgb(114, 219, 219);
 }
-
 /*-----------------
 HEADER STYLING ENDS
 -----------------*/
@@ -77,10 +72,8 @@ HERO STYLING BEGINS
 -----------------*/
 /*Hero image styling*/
 .hero {
-  height: 150px;
-  width: 100%;
   margin-bottom: 25px;
-  margin-top: 0;
+  height: 150px;
   background-image: url(../images/hero-bg.png);
   background-size: cover;
   background-position: center;
@@ -89,17 +82,16 @@ HERO STYLING BEGINS
 
 /*Hero subtitle styling*/
 .hero h2 {
+  margin-top: 100px;
+  margin-right: 3.5%;
+  margin-left: auto;
   background-color: rgb(114, 219, 219);
-  justify-content: end;
+  color: rgb(55, 54, 105);
   font-size: 30px;
   height: 35px;
-  margin-left: 1080px;
-  margin-top: 100px;
-  color: rgb(55, 54, 105);
 }
 
-/*Hero subtitle -master- (because I'm working towards it)*/
-
+/*Hero subtitle -PROFESSIONAL*/
 .hero a {
   color: rgba(55, 54, 105, 0.3);
   text-decoration: none;
@@ -118,156 +110,82 @@ MAIN SECTION STYLING STARTS
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .content-text {
   color: rgb(55, 54, 105);
-  display: flex;
   text-align: right;
   font-size: 45px;
+  flex: 1;
 }
-
 /*---------------------
 ABOUT ME SECTION STARTS
 ---------------------*/
 .about-me {
-  display: flex;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
-/*about me subtitle styling*/
+/*about me title styling*/
 .about-me h2 {
-  text-align: right;
-  width: 130px;
-  padding-right: 15px;
-  margin-left: 95px;
+  padding-right: 20px;
+  border-right: 3px solid rgb(55, 54, 105);
+  margin-left: 94px;
+  height: 100%;
+  flex: 1;
+}
+
+/*about me profile picture styling*/
+.profile-pic {
+  display: flex;
+}
+
+.about-me img {
+  border: 4px solid rgb(114, 219, 219);
+  margin-left: 20px;
+  height: 290px;
 }
 
 /*about me paragraph styling*/
 .about-me p {
-  text-align: left;
-  margin-left: -2px;
-  width: 955px;
-  border-left: 3px solid rgb(55, 54, 105);
-  padding-left: 255px;
-  position: relative;
-  margin-bottom: 500px;
+  margin: 0 30px 0 20px;
 }
-
-.img {
-  width: 250px;
-  height: 305px;
-}
-/*about me profile picture styling*/
-.about-me img {
-  height: 290px;
-  position: absolute;
-
-  margin-left: 20px;
-  border: 4px solid rgb(114, 219, 219);
-  margin-bottom: 100px;
-}
-
 /*-------------------
 ABOUT ME SECTION ENDS
 -------------------*/
 /*-----------------
 WORK SECTION STYLING
 ------------------*/
-/*Work section title*/
 .work {
-  display: flex;
   margin-bottom: 20px;
+  margin-left: 111px;
+  max-width: 100%;
+  display: flex;
 }
 
+/*work section title styling*/
 .work h2 {
-  margin-right: 5px;
-  margin-left: 116px;
+  padding-right: 20px;
+  border-right: 3px solid rgb(55, 54, 105);
+  flex: 1;
 }
-
-/*card position from work title*/
-.cards {
-  margin-left: 10px;
-  border-left: 3px solid rgb(55, 54, 105);
-  padding-left: 20px;
-}
-
-/*image fade*/
-.cards img:hover {
+/*image fade while hovering*/
+.work img:hover {
   opacity: 0.5;
 }
-/*--------------------------
-START OF LARGE CARD STYLING
---------------------------*/
-/*large card global styling*/
-.large-card {
-  height: 565px;
-  font-size: 22px;
-  margin-bottom: 30px;
-  display: flex;
-  z-index: 9999;
-}
-
-/*large card image anchor styling*/
-.large-card a {
-  display: flex;
-}
-
-/*removal of anchor decoration*/
-.large-card a,
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none;
-  color: inherit;
-}
-
-/*large card image styling*/
-.large-card img {
-  border: 4px solid rgb(114, 219, 219);
-  width: 1190px;
-  display: flex;
-}
-
-/*large card text styling*/
-.large-card span,
-.large-card h3 {
-  background-color: rgb(114, 219, 219);
-  color: rgb(55, 54, 105);
-  text-align: left;
-  width: 155px;
-  padding-left: 20px;
-  position: absolute;
-}
-
-.large-card span {
-  margin-top: 498px;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.large-card h3 {
-  font-size: 15px;
-  font-weight: normal;
-  margin-top: 526px;
-}
-
-/*-----------------------
-END OF LARGE CARD STYLING
------------------------*/
 
 /*-------------------------
-START OF SMALL CARD STYLING
+START OF CARD STYLING
 -------------------------*/
-/*small card global styling*/
-.small-cards {
+/*ALL card global styling*/
+.cards {
   display: flex;
   flex-wrap: wrap;
-  z-index: 9999;
+  flex: 16;
 }
 
-/*removal of anchor decoration*/
-.small-cards a,
+/*removal of anchor default decoration*/
+.cards a,
 a:hover,
 a:focus,
 a:active {
@@ -275,76 +193,73 @@ a:active {
   color: inherit;
 }
 
-/*small card image styling*/
-.small-cards img {
+/*ALL cards image styling*/
+.cards img {
   border: 4px solid rgb(114, 219, 219);
-  width: 576px;
-  height: 200px;
-  justify-content: space-evenly;
-  display: flex;
+  height: 250px;
+  width: 96%;
 }
 
-.LED-wall img,
-.pastel-puzzels img {
-  margin-right: 15px;
-  margin-bottom: 30px;
-}
-
-.calculator img,
-.run-buddy img {
-  margin-left: 15px;
-}
-
-/*small card text styling*/
-.small-cards h3,
-.small-cards span {
+/*ALL card text styling*/
+.cards h3 {
+  padding: 0 20px;
+  margin-top: 210px;
+  margin-left: 20px;
   background-color: rgb(114, 219, 219);
   color: rgb(55, 54, 105);
-  text-align: left;
   position: absolute;
+  text-align: left;
 }
 
-.small-cards span {
+/*ALL cards text styling - LARGE FONT TEXT*/
+.cards h3 {
   font-size: 25px;
   font-weight: bold;
-  margin-top: 140px;
 }
 
-.small-cards h3 {
+/*ALL cards text styling - small FONT TEXT*/
+.cards span {
   font-size: 15px;
   font-weight: normal;
-  margin-top: 168px;
 }
 
-.LED-wall h3,
-.LED-wall span {
-  width: 120px;
-  padding-left: 20px;
+/*large card width*/
+.large-card {
+  width: 100%;
 }
 
-.calculator h3,
-.calculator span {
-  width: 165px;
-  margin-left: 18px;
-  padding-left: 20px;
+/*large card img styling*/
+.large-card img {
+  margin-left: 20px;
+  width: 95%;
+  height: 800px;
 }
 
-.pastel-puzzels h3,
-.pastel-puzzels span {
-  width: 185px;
-  padding-left: 20px;
+/*large card text positioning*/
+.large-card h3 {
+  margin-top: 740px;
 }
 
-.run-buddy h3,
-.run-buddy span {
-  width: 145px;
-  margin-left: 18px;
-  padding-left: 20px;
+/*small card width*/
+.LED-wall,
+.calculator,
+.pastel-puzzels,
+.run-buddy {
+  width: 48.5%;
 }
 
-/*-------------------------
-END OF SMALL CARD STYLING
--------------------------*/
+/*small card margins*/
+.LED-wall img,
+.pastel-puzzels img,
+.calculator img,
+.run-buddy img {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/*------------------------
+CARD  STYLING SECTION ENDS
+------------------------*/
 /*---------------
 WORK SECTION ENDS
 ---------------*/
@@ -353,37 +268,44 @@ WORK SECTION ENDS
 CONTACT ME SECTION STYLING
 ------------------------*/
 .contact-me {
-  display: flex;
+  margin-bottom: 20px;
+  margin-left: 57.2px;
   text-align: right;
-}
-
-.contact-me h2 {
-  margin-right: 5px;
-  margin-left: 45px;
-}
-
-.contact-me ul {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-  list-style-type: none;
-  margin-right: 70px;
-  margin-left: 5px;
-  border-left: 3px solid rgb(55, 54, 105);
-  padding-left: 20px;
+  display: flex;
 }
+
+/*contact me section title styling*/
+.contact-me h2 {
+  padding-right: 20px;
+  border-right: 3px solid rgb(55, 54, 105);
+  flex-direction: row;
+}
+
+/*contact me list styling*/
+.contact-me ul {
+  margin-right: 6.5%;
+  margin-left: 20px;
+  justify-content: space-between;
+  width: 95%;
+  list-style-type: none;
+  display: flex;
+}
+
 .contact-me li {
   margin-top: 35px;
 }
+
 .contact-me a {
-  color: rgb(55, 54, 105);
-  font-weight: bold;
-  font-size: 22px;
-  text-decoration: none;
   padding-bottom: 2px;
   border-bottom: 3px solid rgb(55, 54, 105);
+  color: rgb(55, 54, 105);
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
+/*contact me link hover styling*/
 .contact-me a:hover {
   background-color: rgb(55, 54, 105);
   color: white;
@@ -395,291 +317,260 @@ CONTACT ME SECTION ENDS
 MAIN SECTION STYLING ENDS
 -----------------------*/
 
-/*-------------------
-MEDIA QUERIES SECTION
--------------------*/
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/*--------------------------
+MEDIA QUERIES SECTION STARTS
+--------------------------*/
+/*media query small desktop screens and laptops*/
 @media screen and (max-width: 980px) {
-  /*nav button relocation*/
-  header {
-    width: 100%;
+  /*header re-size*/
+  header h1 {
+    font-size: 28px;
+    flex: 1;
   }
 
+  /*nav links re-size*/
   header nav {
-    margin-right: 20px;
-    margin-top: 20px;
+    flex: 1.6;
   }
 
-  .hero {
-    height: 120px;
+  header a {
+    font-size: 20px;
   }
 
-  .hero h2 {
-    font-size: 25px;
-    margin-left: 630px;
-    margin-top: 75px;
-  }
+  /*content section title resizing*/
 
   .content-text {
-    font-size: 36px;
+    font-size: 35px;
   }
 
-  /*about-me section placement and re-sizing*/
-
+  /*about-me title re-positioning*/
   .about-me h2 {
+    margin-left: 48px;
+  }
+
+   /*work title re-positioning*/
+  .work {
+    margin-left: 62px;
+  }
+
+  /*large card  and text re sizing and repositioning*/
+
+  .large-card img {
+    height: 600px;
+  }
+
+  .large-card h3 {
+    margin-top: 540px;
+  }
+
+  /*small card resizing and positioning*/
+  .LED-wall,
+  .calculator,
+  .pastel-puzzels,
+  .run-buddy {
+    width: 48.5%;
+  }
+
+  .LED-wall img,
+  .calculator img,
+  .pastel-puzzels img,
+  .run-buddy img {
+    width: 94%;
+  }
+
+  /*contact me section resizing and positioning*/
+
+  .contact-me {
     margin-left: 20px;
   }
 
-  .about-me p {
-    width: 515px;
-  }
-
-  /*work section placement and re-sizing*/
-  .work h2 {
-    margin-left: 61px;
-  }
-
-  /*large card placement and re-sizing*/
-  .large-card img {
-    width: 735px;
-    height: 400px;
-  }
-  /*large card placement and re-sizing*/
-  .large-card {
-    height: max-content;
-  }
-
-  .large-card span {
-    margin-top: 330px;
-  }
-
-  .large-card h3 {
-    margin-top: 358px;
-  }
-  /*small card placement and re-sizing*/
-  .small-cards img {
-    width: 735px;
-    margin-left: 0;
-    justify-content: space-between;
-  }
-
-  .calculator img {
-    margin-bottom: 30px;
-  }
-
-  .calculator span,
-  .calculator h3,
-  .run-buddy span,
-  .run-buddy h3 {
-    margin-left: 2px;
-  }
-  /*contact me section placement*/
-  .contact-me h2 {
-    margin-left: 9px;
-  }
-
-  .contact-me ul {
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .contact-me li {
-    padding: 0 30px 0 30px;
-    margin-top: 10px;
-  }
-}
-
-/*MEDIA QUERIES FOR TABLETS AND SMALLER*/
-@media screen and (max-width: 768px) {
-  /*header section re-positioned re-styled*/
-  header {
-    width: 100%;
-    height: 40px;
-  }
-
-  header h1 {
-    height: 35px;
-    font-size: 25px;
-    width: 330px;
-    padding-top: 2px;
-  }
-
-  header nav {
-    margin-right: 15px;
-    margin-top: 15px;
-  }
-
-  /*subtitle re-styled and positioned*/
-
-  .hero h2 {
-    margin-left: 462px;
-    font-size: 22px;
-  }
-
-  /*main section restyled and positioned*/
-  .content-text {
-    font-size: 22px;
-  }
-
-  /*about me section re-styled and positioned*/
-  .about-me h2 {
-    width: 70px;
-    margin-left: 26px;
-  }
-
-  .about-me p {
-    width: 372px;
-  }
-
-  /*work section restyled and positioned*/
-
-  .work {
-    margin-top: 115px;
-  }
-
-  .work h2 {
-    margin-left: 42px;
-  }
-
-  /*large card restyled and positioned*/
-  .large-card img {
-    width: 585px;
-    height: 300px;
-  }
-
-  .large-card h3 {
-    margin-top: 270px;
-  }
-
-  .large-card span {
-    margin-top: 242px;
-  }
-
-  /*small card re-styling and sizing*/
-  .small-cards img {
-    width: 585px;
-    height: 150px;
-  }
-
-  .small-cards span {
-    margin-top: 95px;
-  }
-
-  .small-cards h3 {
-    margin-top: 124px;
-  }
-  /*contact me section resyling and sizing*/
-  .contact-me h2 {
-    margin-right: 11px;
-  }
-
-  .contact-me li {
-    padding: 0 15px 0 20px;
-  }
   .contact-me a {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 575px) {
-  /*header restyling and positioning*/
+
+/*media query for tablet sized screen and smaller*/
+@media screen and (max-width: 768px) {
+  /*header re-orginizing*/
   header {
-    width: 100%;
-    height: 80px;
+    flex-direction: column;
   }
 
+  /*header title repositioning and sizing*/
   header h1 {
-    height: 27px;
-    font-size: 25px;
     width: 100%;
-    justify-content: center;
+    text-align: center;
+    font-size: 35px;
   }
 
-  /*nav button restyling and positioning*/
-  header nav {
-    justify-content: center;
+  /*nav buttons resizing and positioning*/
+  header ul {
     width: 100%;
-    padding: 0;
-    margin: 0;
   }
 
-  header a {
-    font-size: 15px;
-  }
-  /*hero subtitle restyling and positioning*/
-  .hero {
-    height: 90px;
+  header li {
+    padding: 0 25px;
   }
 
+  /*cool subtitle resizing*/
   .hero h2 {
-    font-size: 22px;
-    margin-left: 285px;
-    margin-top: 58px;
-    height: 25px;
-  }
-  /*main content restyling and positioning*/
-  .content {
-    margin-left: ;
-  }
-
-  .content-text {
     font-size: 25px;
   }
-  /*about-me restyling and positioning*/
-  .about-me img {
-    width: 40%;
-    height: auto;
-    margin-left: 110px;
+
+  .about-me h2{
+    margin-left: 30px;
   }
 
   .about-me p {
-    display: flex;
     text-align: center;
-    padding-top: 355px;
-    padding-left: 25px;
-    width: 400px;
-    position: relative;
-  }
-  /*work section restyling and positioning*/
-  .work {
-    margin-top: 450px;
   }
 
-  .work h2 {
-    margin-left: 35px;
+  /*profile picture re-organizing and sizing*/
+  .profile-pic {
+    flex-wrap: wrap;
+    width: 95%;
   }
-  /*large card restyling and positioning*/
+
+  .about-me img {
+    margin: 0 auto 20px auto;
+    height: 400px;
+    border-radius: 15px;
+  }
+
+  /*ALL cards text styling - LARGE FONT TEXT*/
+  .cards h3 {
+    margin-top: 150px;
+    font-size: 22px;
+    font-weight: bold;
+    
+  }
+
+  /*ALL cards text styling - small FONT TEXT*/
+  .cards span {
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  /*large card resizing and positioning*/
   .large-card img {
-    width: 400px;
-    height: 240px;
+    width: 92%;
+    height: 450px;
   }
 
   .large-card h3 {
-    margin-top: 210px;
+    margin-top: 400px;
   }
 
-  .large-card span {
-    margin-top: 181px;
-  }
-  /*small cards restyling and postioning*/
-  .small-cards img {
-    width: 400px;
-    height: 150px;
-  }
-
-  .small-cards h3 {
-    margin-top: 122px;
+  /*small card re-organizing, sizing and positioning*/
+  .LED-wall,
+  .calculator,
+  .pastel-puzzels,
+  .run-buddy {
+    width: 97%;
   }
 
-  .small-cards span {
-    margin-top: 95px;
+  .LED-wall img,
+  .calculator img,
+  .pastel-puzzels img,
+  .run-buddy img {
+    width: 95%;
+    height: 180px;
   }
-}
-/*contact me section resyling and sizing*/
-.contact-me a {
-  font-size: 20px;
-}
 
-.contact-me h2 {
-  margin-right: 8px;
+  /*contact me section - re-organizing, sizing etc.*/
+  .contact-me ul {
+    flex-wrap: wrap;
+  }
+
+
+  .contact-me li {
+    width: 48%;
+    text-align: center;
+    margin-top: 5px;
+    
+  }
+
+   
+/*media query for mobile phone sized screen and smaller*/
+@media screen and (max-width: 575px) {
+  header ul {
+    justify-content: center;
+  }
+
+  header li {
+    padding: 0 5px;
+  }
+
+  .content-text {
+    font-size: 28px;
+  }
+
+
+  .about-me {
+    margin-left: 3px;
+  }
+
+  .about-me h2 {
+    
+    padding-right: 15px;
+  }
+
+
+  .work {
+    margin-left: 55px;
+  }
+  .work h2 {
+    padding-right: 15px;
+  }
+
+   /*ALL cards text styling - LARGE FONT TEXT*/
+  .cards h3 {
+    margin-left: 15px;
+    margin-top: 130px;
+    font-size: 22px;
+    font-weight: bold;
+    
+  }
+
+  .cards img {
+    margin-left: 15px;
+  }
+
+  /*ALL cards text styling - small FONT TEXT*/
+  .cards span {
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  /*large card resizing and positioning*/
+  .large-card img {
+    width: 92%;
+    height: 400px;
+  }
+
+  .large-card h3 {
+    margin-top: 350px;
+  }
+
+  /*small card re-organizing, sizing and positioning*/
+  .LED-wall,
+  .calculator,
+  .pastel-puzzels,
+  .run-buddy {
+    width: 97%;
+  }
+
+  .LED-wall img,
+  .calculator img,
+  .pastel-puzzels img,
+  .run-buddy img {
+    width: 95%;
+    height: 160px;
+  }
+
+  .contact-me h2 {
+    padding-right: 15px;
+  }
+
+  
 }
