@@ -25,6 +25,7 @@ header {
   margin: 0 auto;
   background-color: rgb(40, 45, 45);
   display: flex;
+  width: 100%;
 }
 
 /*Header title styling*/
@@ -78,6 +79,7 @@ HERO STYLING BEGINS
   background-size: cover;
   background-position: center;
   display: flex;
+  width: 100%;
 }
 
 /*Hero subtitle styling*/
