@@ -22,18 +22,19 @@ HEADER STYLING BEGINS
 /*Header global styling*/
 header {
   padding: 10px 5px 10px 0;
-  margin: 0 auto;
-  background-color: rgb(40, 45, 45);
+  background-color: rgb(22, 36, 36);
   display: flex;
   width: 100%;
 }
 
 /*Header title styling*/
 header h1 {
+  padding-top: 3px;
   background-color: rgb(114, 219, 219);
+  background-image: linear-gradient(45deg, rgb(114, 219, 219) 0%, #659ccf 90%);
   color: rgb(55, 54, 105);
   text-align: end;
-  flex: 0.3;
+  flex: 0.4;
 }
 
 /*Header nav button styling*/
@@ -63,6 +64,7 @@ header a {
 /*nav button hover styling*/
 header a:hover {
   background-color: rgb(114, 219, 219);
+  background-image: linear-gradient(45deg, rgb(114, 219, 219) 0%, #659ccf 90%);
 }
 /*-----------------
 HEADER STYLING ENDS
@@ -75,7 +77,7 @@ HERO STYLING BEGINS
 .hero {
   margin-bottom: 25px;
   height: 150px;
-  background-image: url(../images/hero-bg.png);
+  background-image: url(../images/jumbo.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -88,6 +90,7 @@ HERO STYLING BEGINS
   margin-right: 3.5%;
   margin-left: auto;
   background-color: rgb(114, 219, 219);
+  background-image: linear-gradient(45deg, rgb(114, 219, 219) 0%, #659ccf 90%);
   color: rgb(55, 54, 105);
   font-size: 30px;
   height: 35px;
@@ -243,17 +246,17 @@ a:active {
 }
 
 /*small card width*/
-.LED-wall,
-.calculator,
-.pastel-puzzels,
+.space-camp,
+.coding-quiz,
+.random-password,
 .run-buddy {
   width: 48.5%;
 }
 
 /*small card margins*/
-.LED-wall img,
-.pastel-puzzels img,
-.calculator img,
+.space-camp img,
+.random-password img,
+.coding-quiz img,
 .run-buddy img {
   margin-top: 20px;
   margin-left: 20px;
@@ -310,6 +313,7 @@ CONTACT ME SECTION STYLING
 /*contact me link hover styling*/
 .contact-me a:hover {
   background-color: rgb(55, 54, 105);
+  background-image: linear-gradient(0deg, rgb(55, 54, 105) 0%, #6fa6d6 90%);
   color: white;
 }
 /*---------------------
@@ -372,16 +376,17 @@ MEDIA QUERIES SECTION STARTS
   }
 
   /*small card resizing and positioning*/
-  .LED-wall,
-  .calculator,
-  .pastel-puzzels,
+
+  .space-camp,
+  .coding-quiz,
+  .random-password,
   .run-buddy {
     width: 48.5%;
   }
 
-  .LED-wall img,
-  .calculator img,
-  .pastel-puzzels img,
+  .space-camp img,
+  .coding-quiz img,
+  .random-password img,
   .run-buddy img {
     width: 94%;
   }
@@ -454,16 +459,17 @@ MEDIA QUERIES SECTION STARTS
   }
 
   /*small card re-organizing, sizing and positioning*/
-  .LED-wall,
-  .calculator,
-  .pastel-puzzels,
+
+  .space-camp,
+  .coding-quiz,
+  .random-password,
   .run-buddy {
     width: 97%;
   }
 
-  .LED-wall img,
-  .calculator img,
-  .pastel-puzzels img,
+  .space-camp img,
+  .coding-quiz img,
+  .random-password img,
   .run-buddy img {
     width: 95%;
     height: 180px;
@@ -550,16 +556,17 @@ MEDIA QUERIES SECTION STARTS
   }
 
   /*small card re-organizing, sizing and positioning*/
-  .LED-wall,
-  .calculator,
-  .pastel-puzzels,
+
+  .space-camp,
+  .coding-quiz,
+  .random-password,
   .run-buddy {
     width: 97%;
   }
 
-  .LED-wall img,
-  .calculator img,
-  .pastel-puzzels img,
+  .space-camp img,
+  .coding-quiz img,
+  .random-password img,
   .run-buddy img {
     width: 95%;
     height: 160px;
