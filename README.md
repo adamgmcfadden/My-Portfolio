@@ -12,7 +12,7 @@
 - CSS
 
 ## Screenshot
-![screenshot](https://user-images.githubusercontent.com/83710803/120842466-b7f51780-c53a-11eb-9ec6-9d48006548f7.png)
+![screenshot](https://user-images.githubusercontent.com/83710803/125117433-3dc92d00-e0bc-11eb-9190-dd7739c0ee41.png)
 
 ## Website
 
