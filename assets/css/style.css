@@ -247,7 +247,7 @@ a:active {
 
 /*small card width*/
 .space-camp,
-.coding-quiz,
+.lettuce,
 .random-password,
 .run-buddy {
   width: 48.5%;
@@ -256,7 +256,7 @@ a:active {
 /*small card margins*/
 .space-camp img,
 .random-password img,
-.coding-quiz img,
+.lettuce img,
 .run-buddy img {
   margin-top: 20px;
   margin-left: 20px;
@@ -378,14 +378,14 @@ MEDIA QUERIES SECTION STARTS
   /*small card resizing and positioning*/
 
   .space-camp,
-  .coding-quiz,
+  .lettuce,
   .random-password,
   .run-buddy {
     width: 48.5%;
   }
 
   .space-camp img,
-  .coding-quiz img,
+  .lettuce img,
   .random-password img,
   .run-buddy img {
     width: 94%;
@@ -461,14 +461,14 @@ MEDIA QUERIES SECTION STARTS
   /*small card re-organizing, sizing and positioning*/
 
   .space-camp,
-  .coding-quiz,
+  .lettuce,
   .random-password,
   .run-buddy {
     width: 97%;
   }
 
   .space-camp img,
-  .coding-quiz img,
+  .lettuce img,
   .random-password img,
   .run-buddy img {
     width: 95%;
@@ -558,14 +558,14 @@ MEDIA QUERIES SECTION STARTS
   /*small card re-organizing, sizing and positioning*/
 
   .space-camp,
-  .coding-quiz,
+  .lettuce,
   .random-password,
   .run-buddy {
     width: 97%;
   }
 
   .space-camp img,
-  .coding-quiz img,
+  .lettuce img,
   .random-password img,
   .run-buddy img {
     width: 95%;
