@@ -12,7 +12,8 @@
 - CSS
 
 ## Screenshot
-![screenshot](https://user-images.githubusercontent.com/83710803/125117433-3dc92d00-e0bc-11eb-9190-dd7739c0ee41.png)
+
+![screenshot](https://user-images.githubusercontent.com/83710803/132365790-176b4c63-1ff3-4945-8174-5df10bd6853b.png)
 
 ## Website
 
